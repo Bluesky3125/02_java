@@ -1,5 +1,6 @@
 package com.ohgiraffers.section01.list.run;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -17,8 +18,9 @@ public class Application5 {
 //                                  // (Queue의 구현체는 하위 타입으로 만들어야 한다.)
 //        Queue<String> que = new LinkedList<>();     // 사실 Dequeue다.
 
-        /* 설명. PriorityQueue를 활용하면 선입선출 + 정렬의 */
-        Queue<String> que = new PriorityQueue<>();
+        /* 설명. PriorityQueue를 활용하면 선입선출 + 정렬의 개념을 가져갈 수 있다. */
+//        Queue<String> que = new PriorityQueue<>();
+        Queue<String> que = new PriorityQueue<>(Collections.reverseOrder());
         que.offer("first");
         que.offer("second");
         que.offer("third");
