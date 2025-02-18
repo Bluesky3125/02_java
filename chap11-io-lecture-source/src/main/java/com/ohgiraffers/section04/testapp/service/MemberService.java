@@ -45,7 +45,7 @@ public class MemberService {
 //        System.out.println("insert 성공 실패 여부: " + result);
 
         if (result == 1) {
-            System.out.println("외원가입을 축하드립니다!!" + member.getId() + "닙~!");
+            System.out.println("회원가입을 축하드립니다!!" + member.getId() + "님~!");
         } else {
             System.out.println("회원가입 실패");
         }
